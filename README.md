@@ -11,8 +11,10 @@ There are two main files needed to run this analysis and data conversion.
 1. Samsung Accelerometer data (accelerometers.zip).[1]
 2. R script that converts the Samsung data to tidy dataset (run_analysis.R)
    run_analysis has an optional parameter to specify if type is to be included in the tidydataset or not. For me    it was not clear if this information was implicitly required or not. In dataset uploaded dataset I chose to add the type column in tidydataset.txt. 
-   	includeType = FALSE --> not include variable (tidydataset without type column.txt is also available on github)
-	includeType = TRUE  --> include variable (test or train group) (=Default)
+
+Options for includeType are:
+includeType = FALSE --> not include variable (tidydataset without type column is also available on github account, in case it was the assignment to leave it out)
+includeType = TRUE  --> include variable (test or train group) (=Default)
 
 ## How this works?
 1. If the run_analysis script is run, it will extract the Samsung Accelerometer data into the working directory.
