@@ -29,7 +29,7 @@ Following columns:
 , STANDING, LAYING
  
 * subject_id: id of the person that participated in measurements
-* type: person was in test or train group. Note that adding type in the dataset is optional, as I think this is variable also important information for further analysis. Default = show it. It can be removed by parameter 'includeType = FALSE'. 
+* type: person was in test or train group. Note that adding type in the dataset is optional, as I think this is variable also important information for further analysis. Default = show it. It can be removed by parameter 'includeType = FALSE'. Version without was upload to coursera, both versions are uploaded in Github. 
 * AVERAGE Mean and AVERAGE Standard Deviation (STD) variables on e.g. body, gravity positions X,Y,Z. Grouped by: subject and activity. There are variables for mean/std: 
   + XYZ: "XYZ' is used to denote 3-axial signals in the X, Y and Z directions."[1]
   + time or frequency
