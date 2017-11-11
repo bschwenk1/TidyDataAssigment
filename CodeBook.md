@@ -35,6 +35,8 @@ Following columns:
   + time or frequency
   + Gyro or Acceleration (Acc)	
   + Magnitude (Mag) and/or Jerk (sudden movements) 	
+  
+ Complete set includes at the bottom:
 
 See original Samsung documentation for more information on the meaning of the variables[1]
 Note that the following changes where made to the variable names to enhance readability:
@@ -49,4 +51,6 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.)
 
+Variables: 
+activity_name" "subject_id" "timeBodyAcc-mean()-X" "timeBodyAcc-mean()-Y" "timeBodyAcc-mean()-Z" "timeBodyAcc-std()-X" "timeBodyAcc-std()-Y" "timeBodyAcc-std()-Z" "timeDataAcc-mean()-X" "timeDataAcc-mean()-Y" "timeDataAcc-mean()-Z" "timeDataAcc-std()-X" "timeDataAcc-std()-Y" "timeDataAcc-std()-Z" "timeBodyAccJerk-mean()-X" "timeBodyAccJerk-mean()-Y" "timeBodyAccJerk-mean()-Z" "timeBodyAccJerk-std()-X" "timeBodyAccJerk-std()-Y" "timeBodyAccJerk-std()-Z" "timeBodyGyro-mean()-X" "timeBodyGyro-mean()-Y" "timeBodyGyro-mean()-Z" "timeBodyGyro-std()-X" "timeBodyGyro-std()-Y" "timeBodyGyro-std()-Z" "timeBodyGyroJerk-mean()-X" "timeBodyGyroJerk-mean()-Y" "timeBodyGyroJerk-mean()-Z" "timeBodyGyroJerk-std()-X" "timeBodyGyroJerk-std()-Y" "timeBodyGyroJerk-std()-Z" "timeBodyAccMag-mean()" "timeBodyAccMag-std()" "timeDataAccMag-mean()" "timeDataAccMag-std()" "timeBodyAccJerkMag-mean()" "timeBodyAccJerkMag-std()" "timeBodyGyroMag-mean()" "timeBodyGyroMag-std()" "timeBodyGyroJerkMag-mean()" "timeBodyGyroJerkMag-std()" "frequencyBodyAcc-mean()-X" "frequencyBodyAcc-mean()-Y" "frequencyBodyAcc-mean()-Z" "frequencyBodyAcc-std()-X" "frequencyBodyAcc-std()-Y" "frequencyBodyAcc-std()-Z" "frequencyBodyAcc-meanFreq()-X" "frequencyBodyAcc-meanFreq()-Y" "frequencyBodyAcc-meanFreq()-Z" "frequencyBodyAccJerk-mean()-X" "frequencyBodyAccJerk-mean()-Y" "frequencyBodyAccJerk-mean()-Z" "frequencyBodyAccJerk-std()-X" "frequencyBodyAccJerk-std()-Y" "frequencyBodyAccJerk-std()-Z" "frequencyBodyAccJerk-meanFreq()-X" "frequencyBodyAccJerk-meanFreq()-Y" "frequencyBodyAccJerk-meanFreq()-Z" "frequencyBodyGyro-mean()-X" "frequencyBodyGyro-mean()-Y" "frequencyBodyGyro-mean()-Z" "frequencyBodyGyro-std()-X" "frequencyBodyGyro-std()-Y" "frequencyBodyGyro-std()-Z" "frequencyBodyGyro-meanFreq()-X" "frequencyBodyGyro-meanFreq()-Y" "frequencyBodyGyro-meanFreq()-Z" "frequencyBodyAccMag-mean()" "frequencyBodyAccMag-std()" "frequencyBodyAccMag-meanFreq()" "frequencyBodyBodyAccJerkMag-mean()" "frequencyBodyBodyAccJerkMag-std()" "frequencyBodyBodyAccJerkMag-meanFreq()" "frequencyBodyBodyGyroMag-mean()" "frequencyBodyBodyGyroMag-std()" "frequencyBodyBodyGyroMag-meanFreq()" "frequencyBodyBodyGyroJerkMag-mean()" "frequencyBodyBodyGyroJerkMag-std()" "frequencyBodyBodyGyroJerkMag-meanFreq()" "angle(timeBodyAccMean,gravity)" "angle(timeBodyAccJerkMean),gravityMean)" "angle(timeBodyGyroMean,gravityMean)" "angle(timeBodyGyroJerkMean,gravityMean)" "angle(X,gravityMean)" "angle(Y,gravityMean)" "angle(Z,gravityMean)"
 
