@@ -89,14 +89,16 @@ run_analysis <- function(includeType=TRUE){
   
   #############################################
   # Uses descriptive activity names to name the activities in the data set
-  accelerometer <- accelerometer[,!grepl("(.*bandsEnergy().*)",names(accelerometer))] #remove these columns as they return warning (and we do not need them for end result)
+  accelerometer <- accelerometer[,!grepl("(.*bandsEnergy().*)",names(accelerometer))] #remove these columns as they return warning 
+                                                                                      #(and we do not need them for end result)
   accelerometer <- merge(accelerometer,activity_labels,by.x="activity_id",by.y="activity_id") #merge on activity id (column is added in last position)
   accelerometer <- accelerometer[, c(grep("activity_name", names(accelerometer)), (1:ncol(accelerometer)-1))]  #move activity name to the front
   
   
   ############################################
   # Extracts only the measurements on the mean and standard deviation for each measurement.
-  # Although not explicitly mentioned in the assignment, I also added the type (test|train), activity_name and subject_id. Otherwise the dataset would be less useable)
+  # Although not explicitly mentioned in the assignment, I also added the type (test|train), activity_name and subject_id. 
+  # Otherwise the dataset would be less useable)
   # type selection can be selected or unselected via function parameter includeType. Default = selected. 
     if (includeType==TRUE){ 
       typestring<-"(type)|"
@@ -110,8 +112,9 @@ run_analysis <- function(includeType=TRUE){
   #From the data set in step 4 (previous line), creates a second, 
   #independent tidy data set with the average of each variable for each activity and each subject.
   #this gets a table with activity_name, subject_id, type (test|train) and all mean values for all other variables. 
-  #Note that type is excluded (subject is in test or train group) if includeType=TRUE (otherwise not part of dataset)
-  #PS. I added type although not mentioned explicitly in the assignment. I think this is needed to know if person is in test or train group. 
+  #Note that type is excluded (subject is in test or train group) if includeType=FALSE (otherwise not part of dataset)
+  #PS. I added type although not mentioned explicitly in the assignment. 
+  #I think this is needed to know if person is in test or train group. 
     if (includeType==TRUE){   
       tidydata <- aggregate(. ~ activity_name+subject_id-type, data=accelerometer, mean)  #average all values (=.) by grouping activity_name and subject_id.
     }else{
